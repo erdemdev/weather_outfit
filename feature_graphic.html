@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1024px;
+    height: 500px;
+    background: linear-gradient(135deg, #1A2B35 0%, #2E4A5A 50%, #1A2B35 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .app-name {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+  }
+  .app-name span {
+    color: #64C8E8;
+  }
+  .tagline {
+    font-size: 20px;
+    color: #a0c8d8;
+    max-width: 420px;
+    line-height: 1.5;
+  }
+  .badges {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .badge {
+    background: rgba(100,200,232,0.2);
+    border: 1px solid #64C8E8;
+    color: #64C8E8;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .icon-placeholder {
+    width: 140px;
+    height: 140px;
+    background: rgba(100,200,232,0.15);
+    border: 3px solid #64C8E8;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+  }
+  .weather-row {
+    display: flex;
+    gap: 16px;
+  }
+  .weather-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 12px 18px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+  }
+  .weather-card .temp {
+    font-size: 22px;
+    font-weight: 700;
+    color: #64C8E8;
+  }
+</style>
+</head>
+<body>
+  <div class="left">
+    <div class="app-name">Hava &amp;<br><span>Kombin</span></div>
+    <div class="tagline">Hava durumuna göre akıllı kıyafet önerileri. Gardırobunu yönet, kombinini planla.</div>
+    <div class="badges">
+      <div class="badge">🌤 Hava Durumu</div>
+      <div class="badge">👗 Kombin Önerisi</div>
+      <div class="badge">📍 Konum</div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="icon-placeholder">⛅</div>
+    <div class="weather-row">
+      <div class="weather-card">
+        <div class="temp">18°C</div>
+        <div>Parçalı Bulutlu</div>
+      </div>
+      <div class="weather-card">
+        <div class="temp">👔</div>
+        <div>Mont + Jean</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
